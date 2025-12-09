@@ -1,0 +1,119 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.timer__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e24;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 10;
+}
+.timer__button {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid transparent;
+  padding: 1rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+.timer__button:hover {
+  background-color: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+  transform: translateY(-2px);
+}
+.timer__button:active {
+  transform: translateY(0);
+}
+.timer__form {
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+  min-width: 200px;
+}
+.timer__input {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+.timer__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+.timer__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+.timer__input:focus {
+  border-bottom-color: #00d4ff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #2a2a35 0%, #121212 100%);
+}
+.display__time-left {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12rem;
+  font-weight: 500;
+  line-height: 1;
+  background: linear-gradient(135deg, #fff 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+@media (max-width: 768px) {
+  .display__time-left {
+    font-size: 6rem;
+  }
+}
+.display__end-time {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.display__end-time::before {
+  content: "⏰ Vuelve a las ";
+  opacity: 0.5;
+}/*# sourceMappingURL=countdown.css.map */

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temporizador Pro</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/countdown.css" />
+  </head>
+  <body>
+    <div class="timer">
+      <div class="timer__controls">
+        <button data-time="20" class="timer__button">20 Seg</button>
+        <button data-time="300" class="timer__button">5 Min</button>
+        <button data-time="900" class="timer__button">15 Min</button>
+        <button data-time="1200" class="timer__button">20 Min</button>
+        <button data-time="3600" class="timer__button">1 Hora</button>
+
+        <form name="customForm" id="custom" class="timer__form">
+          <input
+            class="timer__input"
+            type="text"
+            name="minutes"
+            placeholder="Minutos custom"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+
+      <div class="display">
+        <h1 class="display__time-left">00:00</h1>
+        <p class="display__end-time">Selecciona un tiempo</p>
+      </div>
+    </div>
+
+    <script src="countdown.js"></script>
+  </body>
+</html>
