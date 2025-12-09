@@ -4,7 +4,16 @@
 
 En este reto se hizo el contador junto con los botones en javascript.
 
-El código fundamental del ejercicio es:
+Tecnologías utilizadas:
+
+- JavaScript (Vanilla)
+- Html
+- SASS
+- CSS
+
+## Código más importante del reto:
+
+El código fundamental del ejercicio es el siguiente
 
 ```javascript
 function timer(seconds) {
@@ -35,3 +44,15 @@ document.querySelector("nombre-clase");
 ```
 
 para poder acceder a los elementos y así cambiar los valores en la interfaz gráfica.
+
+## Ejecución:
+
+Para poder ejecutar el proyecto de manera local se necesita ir a la carpeta en donde se encuentra el `index.html`
+
+```bash
+cd C:\Users\Documents\Projects\CountdownProject
+```
+
+Y presionamos doble click sobre el archivo `index.html`. Con esto ya se puede ver en el navegador la página.
+
+Sin embargo para poder acceder a cambios en tiempo real sin necesidad de recargar el navegador, podemos utilizar Live Server.
